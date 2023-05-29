@@ -1,7 +1,26 @@
-<div>
-    <p>home works!</p>
-    <nav>
-        <a routerLink="../" routerLinkActive="active">Back</a>
-    </nav>
-</div>
+<body>
+    <div class="tl">
+        <p>home works!</p>
+        <nav>
+            <a routerLink="../" routerLinkActive="active">Back</a>
+        </nav>
+    </div>
+  <!-- Will be black -->
+  <button class="lg:dark:hover:bg-white ..." (click)="darkMode()">
+    dark mode button
+  </button>
+
+  <div *ngIf="isDark" class="bg-so-white">
+    <h1 class="text-black">Dark mode is here!</h1>
+    <p class="text-black">
+      Lorem ipsum...
+    </p>
+  </div>
+  <div *ngIf="!isDark" class="bg-so-black">
+    <h1>Light mode is here!</h1>
+    <p>
+      Lorem ipsum...
+    </p>
+  </div>
+</body>
 <router-outlet></router-outlet>
