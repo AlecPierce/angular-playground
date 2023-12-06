@@ -1,4 +1,3 @@
-import { Component, HostBinding } from '@angular/core';
 import {
   trigger,
   state,
@@ -8,7 +7,7 @@ import {
   // ...
 } from '@angular/animations';
 
-@Component({
+({
   selector: 'app-animations',
   templateUrl: './animations.component.html',
   styleUrls: ['./animations.component.sass'],
